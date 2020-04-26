@@ -2,12 +2,13 @@ import matplotlib.pyplot as pt
 import statistics as st
 import random
 
-def makesamp(n,x):
+def makesamp(n,x): # function creates sample
     data=[[]]
     samp=0
     say=0
     if (n < 2 or x < 1):
-        print("sample sayısı en az bir sample boyutu 2 den küçük olmamalıdır")
+        print("number of sample must be at least 1")
+        print("sample size must be ast least 2")
         quit()
 
     while samp<x:
