@@ -51,15 +51,6 @@ def xbar(data):
     pt.axhline(color="r",linewidth="1",y=xbarbar-sbar*a3)
     pt.show()
 
-def sbart(data):
-    xlin = [(i+1) for i in range(len(data))]
-    
-    for i,v in enumerate(data):
-        data[i]=round(st.stdev(v),4)
-    sbarbar = st.mean(data)
-
-
- 
 try: # X : number of sample , N : Sample Size , this code block creates samples for chart
     n = int(input("sample size ?"))
     x = int(input("number of sample ?"))
